@@ -1,11 +1,7 @@
 import streamlit as st 
 import pandas as pd 
 
-st.set_page_config(page_title='', page_icon='📚', layout="wide", initial_sidebar_state="auto", menu_items={
-        'Get Help': 'https://www.extremelycoolapp.com/help',
-        'Report a bug': "https://www.extremelycoolapp.com/bug",
-        'About': "# This is a header. This is an *extremely* cool app!"
-    }) 
+st.set_page_config(page_title='Book Marathon', page_icon='📚', layout="wide", initial_sidebar_state="auto") 
 
 def read_data(): 
   data_link = "https://docs.google.com/spreadsheets/d/e/2PACX-1vREos55t0BcKIWlqD3_YTX4OnN2RX2_qQhYqUJL2cB9aRL3DUM_X2BCknrySUYa3fFG-khR1R2Mbk57/pub?gid=0&single=true&output=csv" 
