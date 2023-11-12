@@ -1,5 +1,6 @@
 import streamlit as st 
 import pandas as pd 
+from datetime import datetime 
 
 st.set_page_config(page_title='Book Marathon', page_icon='📚', layout="wide", initial_sidebar_state="auto") 
 
@@ -11,6 +12,15 @@ def read_data():
 
 def main(): 
   books_df = read_data() 
+  
+  start_date = datetime.strptime("2023-11-05", "%Y-%m-%d").date() 
+  current = datetime.now().date()
+  difference_in_days = (current_date - start_date).days  
+
+  st.sidebar("Start date: November 5, 2023") 
+  st.sidebar(f"Days: {difference_in_days}")
+  st.sidebar(f"Completed books: {books_df[books_df.status == 'Done'].shape[0]}")
+   
   st.title(f"📚 Books ({books_df.shape[0]})") 
  
   col1, col2, col3, col4, col5 = st.columns((3, 2, 2, 1, 2)) 
