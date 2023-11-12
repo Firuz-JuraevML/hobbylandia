@@ -17,9 +17,9 @@ def main():
   current_date = datetime.now().date()
   difference_in_days = (current_date - start_date).days  
 
-  st.sidebar("Start date: November 5, 2023") 
-  st.sidebar(f"Days: {difference_in_days}")
-  st.sidebar(f"Completed books: {books_df[books_df.status == 'Done'].shape[0]}")
+  st.sidebar.write("Start date: November 5, 2023") 
+  st.sidebar.write(f"Days: {difference_in_days}")
+  st.sidebar.write(f"Completed books: {books_df[books_df.status == 'Done'].shape[0]}")
    
   st.title(f"📚 Books ({books_df.shape[0]})") 
  
