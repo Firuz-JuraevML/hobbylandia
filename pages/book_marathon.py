@@ -13,10 +13,10 @@ def main():
  
   col1, col2, col3, col4, col5 = st.columns((3, 2, 2, 1, 2)) 
   col1.write("**Book name**") 
-  col1.write("**Author**") 
-  col1.write("**Type**") 
-  col1.write("**Reaction**") 
-  col1.write("**Status**") 
+  col2.write("**Author**") 
+  col3.write("**Type**") 
+  col4.write("**Reaction**") 
+  col5.write("**Status**") 
   
   for i in range(books_df.shape[0]): 
     col1, col2, col3, col4, col5 = st.columns((3, 2, 2, 1, 2)) 
