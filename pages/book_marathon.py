@@ -32,11 +32,11 @@ def main():
   
   for i in range(books_df.shape[0]): 
     col1, col2, col3, col4, col5 = st.columns((3, 2, 2, 1, 2)) 
-    col1.write(f"📕 {books_df.iloc[0].book_name}") 
-    col2.write(books_df.iloc[0].author)
-    col3.write(books_df.iloc[0].type)
-    col4.write(books_df.iloc[0].reaction)
-    col5.write(books_df.iloc[0].status)
+    col1.write(f"📕 {books_df.iloc[i].book_name}") 
+    col2.write(books_df.iloc[i].author)
+    col3.write(books_df.iloc[i].type)
+    col4.write(books_df.iloc[i].reaction)
+    col5.write(books_df.iloc[i].status)
       
 
 if __name__ == '__main__':
