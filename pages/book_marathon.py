@@ -14,7 +14,7 @@ def main():
   books_df = read_data() 
   
   start_date = datetime.strptime("2023-11-05", "%Y-%m-%d").date() 
-  current = datetime.now().date()
+  current_date = datetime.now().date()
   difference_in_days = (current_date - start_date).days  
 
   st.sidebar("Start date: November 5, 2023") 
