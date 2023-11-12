@@ -20,3 +20,5 @@ def main():
     col2.write(books_df.iloc[0].author)
       
 
+if __name__ == '__main__':
+    main() 
