@@ -11,7 +11,7 @@ def main():
   st.title("📚 Books") 
 
   books_df = read_data() 
-  col1, col2, col3, col4, col5 = st.columns((3, 2, 2, 2, 1)) 
+  col1, col2, col3, col4, col5 = st.columns((3, 2, 2, 1, 2)) 
   col1.write("**Book name**") 
   
   for i in range(books_df.shape[0]): 
