@@ -26,17 +26,17 @@ def main():
 
     col1, col2 = st.columns(2)
     col1.write("List of top countries and number of coins")
-    col1.dataframe(coin_data_new)
+    col1.dataframe(coin_data_new, use_container_width=True)
 
     col2.write("List of former countries and number of coins")
-    col2.dataframe(coin_data_old)
+    col2.dataframe(coin_data_old, use_container_width=True)
 
     col3, col4 = st.columns(2)
     col3.write("List of countries and number of coins")
-    col3.dataframe(short_list_data)
+    col3.dataframe(short_list_data, use_container_width=True)
 
     col4.write("List of one-copy only countries and number of coins")
-    col4.dataframe(one_coin_data)
+    col4.dataframe(one_coin_data, use_container_width=True)
 
 
 if __name__ == '__main__':
