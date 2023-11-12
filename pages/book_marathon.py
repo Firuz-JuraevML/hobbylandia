@@ -8,14 +8,18 @@ def read_data():
   return data 
 
 def main(): 
-  st.title("📚 Books") 
-
   books_df = read_data() 
+  st.title(f"📚 Books ({books_df.shape[0]})") 
+ 
   col1, col2, col3, col4, col5 = st.columns((3, 2, 2, 1, 2)) 
   col1.write("**Book name**") 
+  col1.write("**Author**") 
+  col1.write("**Type**") 
+  col1.write("**Reaction**") 
+  col1.write("**Status**") 
   
   for i in range(books_df.shape[0]): 
-    col1, col2, col3, col4, col5 = st.columns((3, 2, 2, 2, 1)) 
+    col1, col2, col3, col4, col5 = st.columns((3, 2, 2, 1, 2)) 
     col1.write(f"📕 {books_df.iloc[0].book_name}") 
     col2.write(books_df.iloc[0].author)
     col3.write(books_df.iloc[0].type)
