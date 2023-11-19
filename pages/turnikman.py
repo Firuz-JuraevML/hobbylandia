@@ -27,8 +27,8 @@ def main():
   col1.write("**Date**") 
   col2.write("**Max**") 
   col3.write("**Total**") 
-  col3.write("**Type**")
-  col4.write("**Record**") 
+  col4.write("**Type**")
+  col5.write("**Record**") 
 
   
   for i in range(data.shape[0]): 
