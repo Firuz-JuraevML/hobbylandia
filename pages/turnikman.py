@@ -29,7 +29,7 @@ def main():
   col3.write("**Total**") 
 
   
-  for i in range(date.shape[0]): 
+  for i in range(data.shape[0]): 
     col1, col2, col3 = st.columns((3, 2, 2)) 
     col1.write(f"📕 {data.iloc[i].date}") 
     col2.write(data.iloc[i].max)
