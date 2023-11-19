@@ -32,7 +32,7 @@ def main():
   
   for i in range(data.shape[0]): 
     col1, col2, col3, col4 = st.columns((3, 2, 2, 2)) 
-    col1.write(f"📕 {data.iloc[i].sana}") 
+    col1.write(f"📆 {data.iloc[i].sana}") 
     col2.write(data.iloc[i].maximal)
     col3.write(data.iloc[i].total)
     col4.write(data.iloc[i].record)
