@@ -41,6 +41,7 @@ def main():
 
 
   st.header(f"⌛️ Days ({difference_in_days})") 
+  data.fillna(0, inplace=True)
   st.dataframe(data, hide_index=True, use_container_width=True)
 
 
