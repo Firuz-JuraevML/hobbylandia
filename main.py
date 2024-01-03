@@ -20,9 +20,22 @@ def main():
   difference_in_days = (current_date - start_date).days  
 
   st.sidebar.write("**Category 1**") 
-  st.sidebar.info("Work 🍅 - 55 mins")  
-  st.sidebar.info("Startup 🚀 - 55 mins") 
-  st.sidebar.info("Knowledge 🪴 - 55 mins") 
+  st.sidebar.info("Work - 55 mins", icon='🍅')  
+  st.sidebar.info("Research - 55 mins", icon='📄') 
+  st.sidebar.info("Startup - 55 mins", icon='🚀') 
+  st.sidebar.info("Knowledge - 55 mins", icon='🪴') 
+  st.sidebar.markdown("***")
+
+  st.sidebar.write("**Category 2**") 
+  st.sidebar.info("Quran time - 30 mins ", icon='🕋')
+  st.sidebar.info("Russian - 30 mins", icon='🇷🇺')
+  st.sidebar.info("Reading - 30 mins", icon='📘')
+
+  st.sidebar.write("**Category 3**") 
+  st.sidebar.info("Workout - 30 mins", icon='💪')
+  st.sidebar.info("Free time activities - 30 mins", icon='🏓')
+  st.sidebar.info("Piano - 30 mins", icon='🎹')
+
 
   st.header(f"⌛️ Days ({difference_in_days})") 
 
