@@ -17,7 +17,18 @@ def main():
   current_date = datetime.now().date()
   difference_in_days = (current_date - start_date).days  
 
+  st.sidebar.write("Category 1") 
+  
+
   st.header(f"⌛️ Days ({difference_in_days})") 
+  
+
+  col1, col2, col3, col4, col5 = st.columns((3, 2, 2, 2, 2)) 
+  col1.write("**Date**") 
+  col2.write("**Work**") 
+  col3.write("**Type**") 
+  col4.write("**Reaction**") 
+  col5.write("**Status**")
 
 
 
