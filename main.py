@@ -18,7 +18,9 @@ def main():
   difference_in_days = (current_date - start_date).days  
 
   st.sidebar.write("Category 1") 
-  
+  st.sidebar.info("Work 🍅 - 55 mins")  
+  st.sidebar.info("Startup 🚀 - 55 mins") 
+  st.sidebar.info("Knowledge 🪴 - 55 mins") 
 
   st.header(f"⌛️ Days ({difference_in_days})") 
   
