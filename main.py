@@ -17,7 +17,7 @@ def main():
   current_date = datetime.now().date()
   difference_in_days = (current_date - start_date).days  
 
-  st.title(f"⌛️ Days ({difference_in_days})") 
+  st.header(f"⌛️ Days ({difference_in_days})") 
 
 
 
