@@ -2,6 +2,8 @@ import streamlit as st
 import pandas as pd 
 from datetime import datetime 
 
+st.set_page_config(page_title='Discipline', page_icon='📚', layout="wide", initial_sidebar_state="auto") 
+
 def read_data():  
   data_link = "https://docs.google.com/spreadsheets/d/e/2PACX-1vREos55t0BcKIWlqD3_YTX4OnN2RX2_qQhYqUJL2cB9aRL3DUM_X2BCknrySUYa3fFG-khR1R2Mbk57/pub?gid=231521276&single=true&output=csv" 
   data = pd.read_csv(data_link) 
@@ -18,9 +20,9 @@ def main():
   difference_in_days = (current_date - start_date).days  
 
   st.sidebar.write("Category 1") 
-  st.sidebar.info("Work 🍅 - 55 mins")  
-  st.sidebar.info("Startup 🚀 - 55 mins") 
-  st.sidebar.info("Knowledge 🪴 - 55 mins") 
+  st.sidebar.write("Work 🍅 - 55 mins")  
+  st.sidebar.write("Startup 🚀 - 55 mins") 
+  st.sidebar.write("Knowledge 🪴 - 55 mins") 
   st.snow()
 
   st.header(f"⌛️ Days ({difference_in_days})") 
