@@ -19,6 +19,8 @@ def main():
   current_date = datetime.now().date()
   difference_in_days = (current_date - start_date).days  
 
+  st.sidebar.info("**Eye Relax** - 10 mins", icon='👁')  
+  
   st.sidebar.write("**Category 1**") 
   st.sidebar.info("Work - 55 mins", icon='🍅')  
   st.sidebar.info("Research - 55 mins", icon='📄') 
@@ -35,16 +37,23 @@ def main():
   st.sidebar.info("Workout - 30 mins", icon='💪')
   st.sidebar.info("Free time activities - 30 mins", icon='🏓')
   st.sidebar.info("Piano - 30 mins", icon='🎹')
+  st.sidebar.info("Meditation - 15 mins", icon='🧘‍♂️')
 
 
   st.header(f"⌛️ Days ({difference_in_days})") 
 
-  col1, col2, col3, col4, col5 = st.columns((3, 2, 2, 2, 2)) 
+  col1, col2, col3, col4, col5, col6 = st.columns((3, 2, 2, 2, 2, 2)) 
   col1.write("**Date**") 
-  col2.write("**Work**") 
-  col3.write("**Type**") 
-  col4.write("**Reaction**") 
-  col5.write("**Status**")
+  col2.write("**Eye Relax**") 
+  col3.write("**Category 1**") 
+  col4.write("**Category 2**") 
+  col5.write("**Category 3**")
+  col6.write("**Namaz/Diet**")
+  
+
+  for i in range(data.shape[0]): 
+    col1, col2, col3, col4, col5, col6 = st.columns((3, 2, 2, 2, 2, 2)) 
+    col1.write(f"📆 {data.iloc[i].date}") 
 
 
 
