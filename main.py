@@ -41,20 +41,7 @@ def main():
 
 
   st.header(f"⌛️ Days ({difference_in_days})") 
-
-  col1, col2, col3, col4, col5, col6 = st.columns((3, 2, 2, 2, 2, 2)) 
-  col1.write("**Date**") 
-  col2.write("**Eye Relax**") 
-  col3.write("**Category 1**") 
-  col4.write("**Category 2**") 
-  col5.write("**Category 3**")
-  col6.write("**Namaz/Diet**")
-  
-
-  for i in range(data.shape[0]): 
-    col1, col2, col3, col4, col5, col6 = st.columns((3, 2, 2, 2, 2, 2)) 
-    col1.write(f"📆 {data.iloc[i].date}") 
-
+  st.dataframe(data, hide_index=True, use_container_width=True)
 
 
 if __name__ == '__main__':
