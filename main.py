@@ -13,6 +13,12 @@ def main():
   st.title("Discipline = Freedom")   
   data = read_data() 
 
+  start_date = datetime.strptime("2024-01-04", "%Y-%m-%d").date() 
+  current_date = datetime.now().date()
+  difference_in_days = (current_date - start_date).days  
+
+  st.title(f"⌛️ Days ({difference_in_days})") 
+
 
 
 if __name__ == '__main__':
