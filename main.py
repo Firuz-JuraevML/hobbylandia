@@ -23,7 +23,6 @@ def main():
   st.sidebar.write("Work 🍅 - 55 mins")  
   st.sidebar.write("Startup 🚀 - 55 mins") 
   st.sidebar.write("Knowledge 🪴 - 55 mins") 
-  st.snow()
 
   st.header(f"⌛️ Days ({difference_in_days})") 
 
