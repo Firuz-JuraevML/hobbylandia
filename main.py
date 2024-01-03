@@ -21,9 +21,9 @@ def main():
   st.sidebar.info("Work 🍅 - 55 mins")  
   st.sidebar.info("Startup 🚀 - 55 mins") 
   st.sidebar.info("Knowledge 🪴 - 55 mins") 
+  st.snow()
 
   st.header(f"⌛️ Days ({difference_in_days})") 
-  
 
   col1, col2, col3, col4, col5 = st.columns((3, 2, 2, 2, 2)) 
   col1.write("**Date**") 
