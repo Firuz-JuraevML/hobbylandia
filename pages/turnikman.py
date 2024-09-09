@@ -13,11 +13,11 @@ def read_data():
 def main(): 
   data = read_data() 
   
-  start_date = datetime.strptime("2023-11-19", "%Y-%m-%d").date() 
+  start_date = datetime.strptime("2024-09-09", "%Y-%m-%d").date() 
   current_date = datetime.now().date()
   difference_in_days = (current_date - start_date).days  
 
-  st.sidebar.write("Start date: November 19, 2023") 
+  st.sidebar.write("Start date: September 9, 2024") 
   st.sidebar.write(f"Days: {difference_in_days}")
   st.sidebar.write(f"Total pullups: {data.total.sum()}")
    
